@@ -7,7 +7,7 @@ https://codepen.io/juiceboxh3ro/pen/vYErbEY?editors=1100
 	dividing up and preparing a page for styling
 
     3. What is an attribute and where do we put it?
-	it adds additional information to a tag. we put it in the opening tag.
+	it adds additional information to a tag, such as class or id. we put it in the opening/start tag.
 
     4. What is the h1 tag used for? How many times should I use it on a page?
 	h1 is used for the most important headline of a page. it should be used once per page.
@@ -16,28 +16,28 @@ https://codepen.io/juiceboxh3ro/pen/vYErbEY?editors=1100
 	img, a
 
     6. What do we put in the head of our HTML document?
-	scripts, links, meta info
+	scripts, links, meta info, title
 
     7. What is an id?
-	an attribute that can assign a value to one item
+	an attribute that can assign a value to one item which can be used by CSS and JavaScript
 
     8. What elements can I add an id to?
-	almost anything, but only once per HTML document
+	any HTML element
 
     9. How many times can I use the same id on a page? 
-	once
+	once per HTML document
 
     10. What is a class?
 	an attribute that can assign a value to many items
 
     11. What elements can I add a class to?
-	almost anything
+	any HTML element
 
     12. How many times can I use the same class on a page?
 	unlimited
 
     13. How do I get my link to open in a new tab?
-	set the a tag's target to _
+	<a href="new-tab" target="_blank">
 
     14. What is the alt attribute used for?
 	giving alternate text to an image for accessibility purposes
@@ -45,11 +45,11 @@ https://codepen.io/juiceboxh3ro/pen/vYErbEY?editors=1100
     15. How do I reference an id?
 	#
 
-    16. What is the difference between a section and a div
-    sections are major parts, divs are smaller parts within that
+    16. What is the difference between a section and a div?
+    content inside a section should be grouped to a theme, whereas div marks up a generic block
 
     17. What is CSS used for? 
-	styling a page
+	styling a page based on HTML elements
 
     18. How do we select an element? Example - every h2 on the page
 	the name of the element followed by opening and closing curly brackets;
@@ -86,10 +86,11 @@ https://codepen.io/juiceboxh3ro/pen/vYErbEY?editors=1100
     text-transform: uppercase, lowercase, capitalize
 
     28. How do I add a 1px border around my div that is dotted and black?
-    border: 1px dotted black;
+    div { border: 1px dotted black; }
 
     29. How do I select everything on the page?
     * { }
+    body { }
 
     30. How do I write a comment in CSS?
     /* comment */
@@ -99,13 +100,14 @@ https://codepen.io/juiceboxh3ro/pen/vYErbEY?editors=1100
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
     ls
-    ls -a
+    and ls -a to display hidden files too
 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
     rm
+    there is no warning and any deletion is permanent
 
     34. Why should I use version control? 
-    for example, in case you make a change that screws everything up, you can go back to a previous version
+    for example, in case you make a change that screws everything up, you can go back to a previous version. or if you rm something important.
 
     35. How often should I commit to github?
 	when you make a major change, or every ~20 minutes.
